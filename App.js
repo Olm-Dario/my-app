@@ -1,17 +1,17 @@
-import React from 'react';
-import { StatusBar } from 'expo-status-bar';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View } from 'react-native';
 import Saludar from './src/components/Saludar';
 
 const App = () => {
 	return (
-		<View style={styles.container}>
-			<Text style={styles.text}>hola mundo</Text>
-			<Saludar />
-			<Saludar nombre="mariela" />
-			<Saludar nombre="ana" />
-			<StatusBar style="auto" />
-		</View>
+		<NavigationContainer>
+			<View style={styles.container}>
+				<Text style={styles.text}>hola dario</Text>
+				<Saludar />
+				<Saludar nombre="mariela" />
+			</View>
+		</NavigationContainer>
 	);
 };
 
