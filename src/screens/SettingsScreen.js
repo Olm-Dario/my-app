@@ -1,4 +1,4 @@
-import { View, Text, Button } from 'react-native';
+import { SafeAreaView, Text, Button } from 'react-native';
 
 const SettingsScreen = ({ navigation }) => {
 	const goToPage = (pageName) => {
@@ -6,10 +6,10 @@ const SettingsScreen = ({ navigation }) => {
 	};
 
 	return (
-		<View>
+		<SafeAreaView>
 			<Text>Estamos en SettingsSreen</Text>
 			<Button onPress={() => goToPage('Home')} title="Ir a Home" />
-		</View>
+		</SafeAreaView>
 	);
 };
 
