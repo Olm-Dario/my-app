@@ -3,12 +3,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
 import NavigationStack from './src/navigation/NavigationStack';
 import NavigationTab from './src/navigation/NavigationTab';
+import NavigationDrawer from './src/navigation/NavigationDrawer';
 
 const App = () => {
 	return (
 		<NavigationContainer>
-			{/* <NavigationStack /> */}
-			<NavigationTab />
+			{/* <NavigationStack />
+			<NavigationTab /> */}
+			<NavigationDrawer />
 		</NavigationContainer>
 	);
 };
